@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<input> : 입력값을 받기위해 입력창을 띄워주는 요소-->
+    <input type="text"> 
+
+    <!-- placeholder : 어떤값을 입력할지 안내해주는 역할-->
+    <input type="text" placeholder="id 입력">
+
+    <!--value : input 값에 실제로 입력되는 입력값-->
+    <input type="text" value="abc123">
+
+    <!-- readonly 입력값이 삭제되지 않음-->
+    <input type="text" value="abc123" readonly>
+
+    <!-- maxlegth : 입력값의 길이 제한-->
+    <input type="text" maxlength="4">
+
+    <!-- password : 입력값이 점으로 나옴 -->
+    <input type="password">
+
+    <!-- email : 입력값이 이메일로만 받을 수 있음-->
+    <input type="email">
+
+
+    <!-- 사용자의 입력값을 선택으로 받는것
+         : 여러개의 값중 하나만 체크하게 하고싶을 때 -->
+    
+    <!-- radio - name : 네임값을 부여하여 같은 네임값중에 하나만 선택하게끔 조건 -->
+    <!-- checked : 디폴트로 체크해두는 것-->
+    <input type="radio" name="hobby" checked>등산
+    <input type="radio" name="hobby">수영
+    <input type="radio" name="hobby">서핑
+    
+    <!-- 여러개의 선택지에서 여러개의 선택값을 받고싶을 때 -->   
+    <!-- checkbox : 사각형 선택칸, 체크해제 가능-->
+    <input type="checkbox" name="dinner">족발
+    <input type="checkbox" name="dinner">치킨
+    <input type="checkbox" name="dinner">국밥
+
+
+    <!-- select : 여러개의 옵션값에서 사용자가 선택 가능한 창 띄워줌 -->
+    <select name="phone">
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">016</option>
+        <option value="018">018</option>
+    </select> - 
+    <input type="text" maxlength="4"> - 
+    <input type="text" maxlength="4"> 
+
+    <!-- date : 달력창에서 사용자가 날짜 선택 가능 -->
+    <input type="date">
+
+    <!-- color : 팔레트창에서 사용자가 색상 선택 가능 -->
+    <input type="color">
+
+    <!-- range : 범위 조절 창-->
+    <input type="range">
+
+    <!-- botton : 버튼 창 출력 input, button 요소 사용가능-->
+    <input type="botton"  value="버튼">
+    <botton>버튼2</botton>
+
+
+    <!-- 일반적으로 한줄 짜리 입력을 받을 때 사용 ex. 아이디, 제목 등등  -->
+    <input type="text">
+    <!-- textarea : 여러줄의 텍스트 입력값을 받을 때 사용 태그-->
+    <textarea> </textarea>
+    <!-- resize : 사이즈 조절 금지-->
+    <textarea style="width: 300px; height:300px; resize: none;" placeholder="내용을 입력하세요"></textarea>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 01</title>
+</head>
+<body>
+    <!-- table : 페이지의레이아웃을 잡는 용도(예전) 
+                 게시판의 구성형태의 용도로 현재는 쓰임 -->
+    <!-- tr : 한행을 구성하기 위한 태그 -->
+    <!-- th : table head, 헤더컬럼을 구성하는 용도의 태그-->
+    <!-- td : table data, 테이블의 내용 구성-->
+    <!-- border : 테이블에서 구분선 추가-->
+
+    <table border="1">
+        <tr> 
+            <th> 번호 </th>
+            <th> 제목 </th>
+            <th> 글쓴이 </th>
+            <th> 날짜 </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>오늘은 맑음</td>
+            <td>당산맨</td>
+            <td>2022-04-15</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>편백나무스프레이</td>
+            <td>건강맨</td>
+            <td>2022-04-15</td>
+        </tr>
+    </table>
+
+    <!-- html : Semantic tag 의미있는 태그, 
+                태그의 목적을 자체를 명시해주는 태그 -->
+    
+    <table border="1">
+        <thead>
+            <th> 번호 </th>
+            <th> 제목 </th>
+            <th> 글쓴이 </th>
+            <th> 날짜 </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>오늘은 맑음</td>
+                <td>당산맨</td>
+                <td>2022-04-15</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>편백나무스프레이</td>
+                <td>건강맨</td>
+                <td>2022-04-15</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

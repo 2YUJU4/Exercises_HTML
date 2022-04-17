@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+
+  <!-- List = 목록 
+       1. <ul> : unordered list -> 순서가 없는 리스트
+       2. <ol> : ordered list -> 순서가 있는 리스트 
+  -->
+
+  <ul>
+
+    <li>아메리카노</li>
+    <li> 카푸치노 </li>
+    <li> 라떼 
+        <ul>
+            <li> 카페라떼</li>
+            <li> 차이라떼</li>
+            <li> 초코라떼
+                <ul>
+                    <li>카카오 99% </li>
+                    <li>카카오 70%</li>
+                    <li>카카오 30%</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!-- type : 숫자, 아라비아 숫자, 알파벳 순서를 매길지 결정 해줄수 있음
+     start : 시작점 지정 가능-->
+
+<!--알파벳 순서로 두번째부터 시작-->
+<ol type="A" start="2">
+    <li>아메리카노</li>
+    <li>카푸치노</li>
+    <li>라떼
+        <ol>
+            <li>카페라떼</li>
+            <li>차이라떼</li>
+        </ol>
+
+    </li>
+</ol>
+    
+</body>
+</html>

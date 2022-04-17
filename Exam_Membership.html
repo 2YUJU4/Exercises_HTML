@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입 정보 입력</title>
+</head>
+<body>
+    <form action="/sendForm.jsp" method="post">
+    <table border="1" width="550px" height="350px">
+        <thead>
+            <th colspan="2">회원 가입 정보 입력</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th width="25%" align="right">아이디</th>
+                <th align="left">
+                    <input type="text" size="25">
+                    <button>중복확인</button>
+                </th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">패스워드</th>
+                <th align="left"><input type="password" size="25"></th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">패스워드 확인</th>
+                <th align="left"><input type="password" size="25"></th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">이름</th>
+                <th align="left"><input type="text" size="25"></th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">전화번호</th>
+                <th align="left">
+                    <select name="number">
+                        <option value="02">02</option>
+                        <option value="032">032</option>
+                        <option value="031">031</option>
+                    </select> -
+                    <input type="text" size="5" maxlength="4">-
+                    <input type="text" size="5" maxlength="4">
+
+                </th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">이메일</th>
+                <th align="left">
+                    <input type="email" size="25">
+                </th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">우편번호</th>
+                <th align="left">
+                    <input type="text" size="25">
+                    <button>찾기</button>
+                </th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">주소1</th>
+                <th> <input type="text" size="55"></th>
+            </tr>
+            <tr>
+                <th width="25%" align="right">주소2</th>
+                <th> <input type="text" size="55"></th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                        <button type="submit">회원가입</button>
+                    <button type="reset">다시입력</button>
+                </th>    
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

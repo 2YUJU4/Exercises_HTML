@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- form 
+         : 사용자의 입력값을 서버로 전송 
+        <form action="요청을 보낼 주소" method="get/post"데이터를 전송하는 방식
+
+        get -> 입력한값이 주소창에 노출됨
+        ..
+        사용자의 입력을 받을 수 있는 요소
+        -> form태그 안쪽에 서버로 전송하고싶은 요소의 태그들은
+           ** 반드시 name 속성을 가지고 있어야함
+           ex. <input type="text" name="id">
+        </form>
+
+        form을 서버에 전송하기 위해서 submit을 해줘야함.
+        1. submit 타입의 버튼을 사용
+        2. submit() 함수 사용
+    -->
+    
+    <form action="/sendForm.jsp" method="post">
+        <input type="text" name="id"<br>
+        <input type="password" name="pw"<br>
+        
+        <!-- submit 타입의 버튼을 이용하면 form이 제출된다.-->
+        <button type="submit">로그인</button>
+        <button type="button">일반 버튼</button>
+        
+        <!-- reset : 입력한값 초기화-->
+        <button type="reset">리셋버튼</button>
+    </form>
+  
+</body>
+</html>
